@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 60px;
+  width: 100%;
 
   @media (min-width: 576px) {
     margin-top: 120px;
@@ -46,7 +47,19 @@
     margin-bottom: 20px;
 
     &-box {
-      width: 280px;
+      width: 100%;
+
+      @media (min-width: 576px) {
+        max-width: 288px;
+        margin-left: 92px;
+        margin-right: 24px;
+      }
+
+      @media (min-width: 1260px) {
+        max-width: 411px;
+        margin-left: 180px;
+        margin-right: 178px;
+      }
     }
 
     &-field {
@@ -79,7 +92,7 @@
     &-button {
       margin-top: 20px;
       min-height: 48px;
-      min-width: 278px;
+      width: 100%;
       text-decoration: none;
       color: var.$secondaryTextColor;
       background-color: var.$mainTextColor;
@@ -91,6 +104,10 @@
       border: none;
       transition: var.$transitionDuration;
       cursor: pointer;
+
+      @media (min-width: 576px) {
+        max-width: 100%;
+      }
 
       &:hover {
         box-shadow: 1px 4px 16px #e8e8f066;

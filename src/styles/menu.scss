@@ -73,6 +73,10 @@
     color: var.$secondaryTextColor;
   }
 
+  &__link:hover {
+    border-bottom: 3px solid var.$secondaryTextColor;
+  }
+
   &__phone-number {
     display: block;
     text-decoration: none;

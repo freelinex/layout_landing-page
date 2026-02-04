@@ -11,6 +11,10 @@
   }
 }
 
+.page:has(.page__menu:target) {
+  overflow: hidden;
+}
+
 .page__menu {
   position: fixed;
   top: 0;

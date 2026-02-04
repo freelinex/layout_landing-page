@@ -19,9 +19,9 @@
 
   @media (min-width: 1260px) {
     background-image: url(/src/images/header-bg-desktop.png);
-    height: 841px;
+    height: 100vh;
     padding-left: 120px;
-    padding-right: 121px;
+    padding-right: 120px;
   }
 
   &__logo {
@@ -79,6 +79,8 @@
     }
 
     &-phone-number {
+      text-decoration: none;
+      color: var.$mainTextColor;
       font-weight: var.$textWeightBold;
       font-size: var.$textSizeSmall - 4px;
       letter-spacing: 2px;
