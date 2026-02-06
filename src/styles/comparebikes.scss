@@ -10,7 +10,7 @@
     @media (min-width: 1260px) {
       display: flex;
       justify-content: center;
-      gap: 40px;
+      gap: 24px;
       margin-top: 5px;
     }
   }
@@ -41,6 +41,11 @@
       height: var.$cardHeightTablet;
     }
 
+    @media (min-width: 1260px) {
+      width: var.$cardWidthDesktop;
+      height: var.$cardHeightDesktop;
+    }
+
     &-photo {
       width: var.$cardWidth;
       height: var.$cardHeight - 190px;
@@ -49,6 +54,11 @@
       @media (min-width: 576px) {
         width: var.$cardWidthTablet;
         height: var.$cardHeightTablet - 168px;
+      }
+
+      @media (min-width: 1260px) {
+        width: var.$cardWidthDesktop;
+        height: var.$cardHeightDesktop - 190px;
       }
 
       &--sporty4 {

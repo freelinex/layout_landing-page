@@ -1,13 +1,17 @@
 @use 'variables' as var;
 
 .footer {
+  position: sticky;
+  z-index: -1;
   background-image: url(/src/images/footer-image.png);
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: bottom;
+  background-attachment: fixed;
   height: 200px;
 
   @media (min-width: 576px) {
     background-image: url(/src/images/footer-image-tablet.png);
+    background-size: cover;
     height: 480px;
   }
 
